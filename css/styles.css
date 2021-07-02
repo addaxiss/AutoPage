@@ -1,0 +1,286 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*---------------------------------------------------
+                    END OF RESET
+-----------------------------------------------------*/
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*------------------------------------
+                DEFAULTS END
+ --------------------------------------*/
+body {
+  font-family: "Indie Flower", cursive;
+  font-size: 16px; }
+
+/*HEADER*/
+header {
+  background-color: #462c83;
+  color: #f8f0f0;
+  padding: 1rem 2%; }
+  header form {
+    float: right; }
+  header form input {
+    width: 6rem;
+    border-radius: 10px;
+    margin-right: 2%;
+    padding: .2rem;
+    border: none;
+    transition: width .5s; }
+  header form input:focus {
+    width: 8rem; }
+  header h1 {
+    font-size: 2rem; }
+  header h2 {
+    font-size: 2rem; }
+
+/*--clearfix: for an element to not collapse---*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*--------------------------------
+                NAVIGATION
+--------------------------------*/
+nav {
+  background-color: #f8f0f0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    float: left;
+    width: 25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li:last-child {
+    border-right: none; }
+  nav ul li a {
+    display: block;
+    /*element rulecreates the block around the link*/
+    text-align: center;
+    color: #462c83;
+    text-decoration: none;
+    padding: .5rem 0;
+    transition: background .75s ease,color .75s; }
+  nav ul li.active a {
+    background-color: #e8cdcd; }
+  nav ul li a:hover {
+    color: #f8f0f0;
+    background-color: #462c83; }
+
+/*------------------------------------
+                    MAIN
+--------------------------------------*/
+main figure.banner {
+  width: 100%; }
+main figure.banner img {
+  width: 100%; }
+main h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0 2%;
+  color: #462c83; }
+main h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0 0 2%;
+  color: #5a39a9; }
+main h3 {
+  font-size: 1.2rem;
+  color: #7351c4; }
+main p {
+  line-height: 130%;
+  color: #000000; }
+main hr.fadeaway {
+  background: linear-gradient(146deg, #462c83 0%, white 35%, #462c83 100%);
+  height: 4px;
+  border: none;
+  margin: 0 2%; }
+main figure.picture {
+  width: 96%;
+  margin: 0.5rem 2%;
+  /*border:red 1px solid;*/ }
+main figure.picture img {
+  width: 100%; }
+main figure.picture figcaption {
+  text-align: color;
+  color: #462c83; }
+main div.blog article {
+  margin: 0.5rem 2%;
+  width: 96%; }
+main div.pop {
+  background-color: #df8e14;
+  text-align: center;
+  margin: 4%;
+  padding: 1rem; }
+  main div.pop .title {
+    font-size: 3rem; }
+  main div.pop .subtitle {
+    font-size: 2.5rem; }
+  main div.pop .copy span {
+    font-size: 2rem;
+    color: white; }
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  background-color: #462c83; }
+  footer h1 {
+    color: #f8f0f0;
+    padding: .75rem 2%; }
+  footer p {
+    color: #f8f0f0;
+    padding: .75rem 0;
+    text-decoration: upper; }
+  footer p a {
+    color: #f8f0f0; }
+
+@media only screen and (min-width: 770px) {
+  /*-----------------------------
+              MEDIUM SIZE
+  -----------------------------*/
+  /*HEADER*/
+  /*NAVIGATION*/
+  /*MAIN*/
+  main figure.picture {
+    width: 46%;
+    float: left; }
+  main div.blog article {
+    float: left;
+    width: 46%; }
+
+  div.blog article:nth-child(2n+1) {
+    clear: left; }
+
+  /*FOOTER*/ }
+@media only screen and (min-width: 1140px) {
+  /*-----------------------------
+              LARGE SIZE
+  -----------------------------*/
+  /*BODY*/
+  body {
+    background-color: grey; }
+
+  div#wrapper {
+    max-width: 80rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 30px #000000;
+    background-color: white; }
+
+  /*HEADER*/
+  /*NAVIGATION*/
+  nav ul {
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    width: auto; }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li a {
+    padding: .5rem 1rem; }
+
+  /*MAIN*/
+  main figure.picture {
+    width: 21%;
+    float: left; }
+  main div.blog article {
+    float: left;
+    width: 21%; }
+
+  div.blog article:nth-child(2n+1) {
+    clear: none; }
+
+  div.blog article:nth-child(4n+1) {
+    clear: left; }
+
+  /*FOOTER*/ }

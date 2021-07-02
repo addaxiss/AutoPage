@@ -1,0 +1,40 @@
+/*-----------------------------
+            MEDIUM SIZE
+-----------------------------*/
+
+
+/*HEADER*/
+
+
+
+
+/*NAVIGATION*/
+
+
+
+
+/*MAIN*/
+main{
+    figure.picture {
+        width:50%-$gutterdbl; 
+        float:left;}
+    //figure.picture img{width:100%;}
+    
+    div.blog article{
+        float:left;
+        width:50%-$gutterdbl;
+    }
+}
+
+
+
+div.blog article:nth-child(2n+1){
+     clear:left;
+}
+
+
+
+
+
+
+/*FOOTER*/
